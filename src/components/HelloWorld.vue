@@ -15,6 +15,11 @@ const goMame = () => {
 const goMame1 = () => {
   location.href="https://heixiaoma.github.io/mini-tg/knight/"
 }
+const showData = () => {
+  WebApp.showAlert(JSON.stringify(WebApp.initDataUnsafe))
+}
+
+
 </script>
 
 <template>
@@ -22,6 +27,7 @@ const goMame1 = () => {
 
   <div><button type="button" @click="goMame">前往游戏</button></div>
   <div><button type="button" @click="goMame1">前往webgl游戏</button></div>
+  <div><button type="button" @click="showData">显示数据</button></div>
 
 
 </template>
