@@ -8,15 +8,16 @@ defineProps({
 const showAlert = () => {
   WebApp.showAlert(`调用TG的结果`)
 }
+
+const goMame = () => {
+ location.href="https://heixiaoma.github.io/mini-tg/piano/"
+}
 </script>
 
 <template>
-  <button type="button" @click="showAlert">显示TG警告</button>
+  <button type="button" @click="showAlert">显示TG警告测试</button>
+  <button type="button" @click="goMame">前往游戏</button>
 
-  <div class="container">
-    <iframe frameborder="0" scrolling="no" width="100%" height="100%" src="http://43.134.134.90:8888/mini-game/piano">
-    </iframe>
-  </div>
 
 </template>
 
