@@ -12,11 +12,16 @@ const showAlert = () => {
 const goMame = () => {
  location.href="https://heixiaoma.github.io/mini-tg/piano/"
 }
+const goMame1 = () => {
+  location.href="https://heixiaoma.github.io/mini-tg/knight/"
+}
 </script>
 
 <template>
   <button type="button" @click="showAlert">显示TG警告测试</button>
-  <button type="button" @click="goMame">前往游戏</button>
+
+  <div><button type="button" @click="goMame">前往游戏</button></div>
+  <div><button type="button" @click="goMame1">前往webgl游戏</button></div>
 
 
 </template>
