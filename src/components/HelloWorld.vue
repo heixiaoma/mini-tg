@@ -17,11 +17,19 @@ const goMame1 = () => {
 }
 
 const data = ref(WebApp.initDataUnsafe)
+const time = ref(0)
+
+onMounted(() => {
+    setInterval(function () {
+      time.value=new Date().getTime();
+    },1000)
+})
 
 
 </script>
 
 <template>
+  <div>{{ time }}</div>
   <button type="button" @click="showAlert">显示TG警告测试</button>
 
   <div><button type="button" @click="goMame">前往游戏</button></div>
