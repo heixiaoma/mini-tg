@@ -15,6 +15,9 @@ const goMame = () => {
 const goMame1 = () => {
   location.href="https://heixiaoma.github.io/mini-tg/knight/"
 }
+const goMame2 = () => {
+  WebApp.openTelegramLink("https://t.me/wallet/start?startapp=wpay_order-orderId__10758705073666&startApp=wpay_order-orderId__10758705073666");
+}
 
 const data = ref(WebApp.initDataUnsafe)
 const time = ref(0)
@@ -34,6 +37,7 @@ onMounted(() => {
 
   <div><button type="button" @click="goMame">前往游戏</button></div>
   <div><button type="button" @click="goMame1">前往webgl游戏</button></div>
+  <div><button type="button" @click="goMame2">支付</button></div>
   <div>{{data}}</div>
 
 
