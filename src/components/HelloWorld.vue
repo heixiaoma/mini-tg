@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import {onMounted, ref} from 'vue'
 import WebApp from '@twa-dev/sdk'
 defineProps({
   msg: String,
